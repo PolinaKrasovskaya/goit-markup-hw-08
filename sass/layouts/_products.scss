@@ -1,0 +1,127 @@
+.prod-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.list-direction-port {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @include for-size(tablet) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+    width: auto;
+  }
+}
+
+.list-products {
+  display: flex;
+  flex-wrap: wrap;
+
+  // @include for-size(desktop) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+}
+
+.products {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products {
+    width: calc((100% - 30px) / 2);
+  }
+  .products:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .products:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products {
+    width: calc((100% - 60px) / 3);
+  }
+  .products:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .products:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+// .products:nth-child(3n) {
+//   margin-right: 0px;
+// }
+
+// .products:nth-last-child(-n + 3) {
+//   margin-bottom: 0px;
+// }
+
+.prod-link {
+  display: block;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .product-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.overlay-cotainer {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.product-overlay {
+  position: absolute;
+  padding: 63px 24px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  @include fonts(18px, 400, 1.56, 0.03em);
+  color: $white;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-name {
+  @include fonts(18px, 700, 2, 0.06em);
+  color: $black;
+}
+
+.category {
+  @include fonts(16px, 1.87, 0.03em);
+  color: $main-text-cl;
+}
+
+.description {
+  padding: 20px 24px;
+}

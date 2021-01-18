@@ -1,0 +1,115 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  align-items: center;
+  background-color: $dark-bg;
+}
+
+.footer-contact-part {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  // .footer {
+  //   display: flex;
+  //   justify-content: space-evenly;
+  //   align-items: baseline;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    .footer {
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    }
+
+    .footer-widget {
+      margin-right: 70px;
+    }
+  }
+  // .footer-contact-part {
+  //   display: flex;
+  //   justify-content: space-evenly;
+  //   align-items: baseline;
+  // }
+}
+// @include for-size(desktop) {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// @include for-size(desktop) {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.footer-widget {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.social-link-footer {
+  @include centered(flex);
+  border-radius: 50%;
+  @include size(44px, 44px);
+  background: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-cl;
+  }
+}
+
+.social-icon-footer {
+  @include size(20px, 20px);
+  fill: $white;
+}
+
+.adress {
+  color: $white;
+  @include fonts(14px, 1.71);
+}
+
+.footer-links {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.join {
+  // margin-top: 72px;
+  margin-bottom: 20px;
+  @include fonts(14px, 700, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: $white;
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
+}
+
+.footer-contacts-link:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer-contacts {
+  @include fonts(14px, 1.71);
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}

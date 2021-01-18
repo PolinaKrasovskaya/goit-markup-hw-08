@@ -1,0 +1,48 @@
+.section-todo {
+  padding-top: 0px;
+  padding-bottom: 94px;
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}
+
+.list-todo {
+  width: auto;
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.image-todo:not(:first-child) {
+  margin-left: 30px;
+}
+
+.image-todo {
+  position: relative;
+}
+
+.image-todo {
+  position: relative;
+}
+
+.overlay-todo {
+  position: absolute;
+  @include centered(flex);
+  bottom: 0;
+  text-transform: uppercase;
+  @include fonts(14px, 700, 1.14);
+  color: $white;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
