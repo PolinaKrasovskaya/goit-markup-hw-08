@@ -758,19 +758,23 @@ img {
 }
 
 .products {
+  display: inline-block;
   width: 100%;
-  margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+
+.products:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .products {
     width: calc((100% - 30px) / 2);
   }
-  .products:nth-child(odd) {
+  .products:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .products:nth-last-child(-n + 2) {
+  .products:nth-last-child(-n + 1) {
     margin-bottom: 0px;
   }
 }
@@ -785,6 +789,12 @@ img {
   .products:nth-last-child(-n + 3) {
     margin-bottom: 0px;
   }
+}
+
+.prod-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .prod-link {
