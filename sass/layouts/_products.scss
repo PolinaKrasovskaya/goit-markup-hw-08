@@ -115,6 +115,7 @@
 .product-name {
   @include fonts(18px, 700, 2, 0.06em);
   color: $black;
+  margin-bottom: 4px;
 }
 
 .category {

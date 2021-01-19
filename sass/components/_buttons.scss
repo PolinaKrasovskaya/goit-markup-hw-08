@@ -1,6 +1,6 @@
 .button {
   @include centered(inline-block);
-  padding: 10px 32px;
+  // padding: 9px 31px;
   @include size(200px, 50px);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
@@ -8,7 +8,7 @@
   cursor: pointer;
 
   font-family: inherit;
-  @include fonts(16px, 1.87, 0.06em);
+  @include fonts(16px, 700, 1.87, 0.06em);
   color: $white;
   background-color: $accent-cl;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,6 +123,6 @@
     margin-bottom: 0;
   }
 }
-.button-menu-list:nth-child(n + 3) {
+.button-menu-list:nth-child(n + 2) {
   margin-bottom: 0;
 }

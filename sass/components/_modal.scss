@@ -162,29 +162,81 @@
   margin-right: auto;
 }
 
-.checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
+// .modal-check {
+//   display: block;
+//   text-align: center;
+//   margin-bottom: 30px;
+// }
+
+// .checkbox {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   position: absolute;
+// }
+
+// .icon {
+//   margin-right: 7px;
+//   @include size(16px, 15px);
+//   background-color: $white;
+//   background-image: url(../img/Vector-check.svg);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+
+// .label-check {
+//   @include centered(flex);
+//   @include fonts(12px, 400, 1.17, 0.03em);
+
+//   @include for-size(desktop) {
+//     @include fonts(14px, 400, 1.71, 0.03em);
+//   }
+// }
+
+// .checkbox:checked + .icon {
+//   background-color: $accent-cl;
+//   background-image: url(../img/iconcheck.svg);
+//   background-size: contain;
+//   background-origin: border-box;
+//   border-radius: 2px;
+//   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .label-check a {
+//   margin-left: 3px;
+// }
+
+// .conditions {
+//   color: $accent-cl;
+//   @include fonts(12px, 400, 1.17, 0.03em);
+
+//   @include for-size(desktop) {
+//     @include fonts(14px, 400, 1.71, 0.03em);
+//   }
+// }
+
+.modal-check {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .icon {
-  margin-right: 7px;
-  @include size(16px, 15px);
-  background-color: $white;
-  background-image: url(../img/Vector-check.svg);
-  background-size: contain;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-left: -20px;
+  background-repeat: no-repeat;
 }
 
-.label-check {
-  @include centered(flex);
-  margin-bottom: 30px;
-  @include fonts(12px, 400, 1.17, 0.03em);
-
-  @include for-size(desktop) {
-    @include fonts(14px, 400, 1.71, 0.03em);
-  }
+.checkbox {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
 }
 
 .checkbox:checked + .icon {
@@ -196,8 +248,13 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-check a {
-  margin-left: 3px;
+.label-check {
+  padding-left: 20px;
+  @include fonts(12px, 400, 1.17, 0.03em);
+
+  @include for-size(desktop) {
+    @include fonts(14px, 400, 1.71, 0.03em);
+  }
 }
 
 .conditions {
