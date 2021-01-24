@@ -5,8 +5,6 @@
   letter-spacing: $ls;
 }
 
-// @mixin border
-
 @mixin centered($ds: flex, $ai: center, $jc: center) {
   display: $ds;
   align-items: $ai;

@@ -47,10 +47,6 @@
     margin-right: 30px;
   }
 
-  // :nth-child(odd) {
-  //   margin-right: 30px;
-  // }
-
   .products:nth-last-child(-n + 1) {
     margin-bottom: 0px;
   }
@@ -73,13 +69,6 @@
   width: 100%;
   height: auto;
 }
-// .products:nth-child(3n) {
-//   margin-right: 0px;
-// }
-
-// .products:nth-last-child(-n + 3) {
-//   margin-bottom: 0px;
-// }
 
 .prod-link {
   display: block;
@@ -121,13 +110,14 @@
 }
 
 .product-name {
-  @include fonts(18px, 700, 2, 0.06em);
+  @include fonts(18px, 700, 2);
   color: $black;
   margin-bottom: 4px;
+  margin: 0px auto;
 }
 
 .category {
-  @include fonts(16px, 1.87, 0.03em);
+  @include fonts(16px, 1.87);
   color: $main-text-cl;
 }
 

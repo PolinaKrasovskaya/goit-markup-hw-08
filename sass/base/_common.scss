@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid red;
 }
 
 h1,
@@ -101,15 +100,6 @@ img {
 
 .psevdo-active {
   position: relative;
-
-  //   margin: 0 auto;
-  //   margin-top: 8px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   .link.current::after {
-  //     margin-top: 28px;
-  //   }
 
   &:after {
     display: block;

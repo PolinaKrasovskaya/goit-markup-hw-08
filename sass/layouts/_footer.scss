@@ -34,21 +34,7 @@
       margin-right: 70px;
     }
   }
-  // .footer-contact-part {
-  //   display: flex;
-  //   justify-content: space-evenly;
-  //   align-items: baseline;
-  // }
 }
-// @include for-size(desktop) {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// @include for-size(desktop) {
-//   display: flex;
-//   justify-content: center;
-// }
 
 .footer-widget {
   margin-bottom: 60px;
@@ -92,7 +78,6 @@
 }
 
 .join {
-  // margin-top: 72px;
   margin-bottom: 20px;
   @include fonts(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;

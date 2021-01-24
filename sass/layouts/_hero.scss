@@ -35,7 +35,6 @@
   @include for-size(desktop) {
     background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../img/decor/header_desktop.jpg");
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -46,7 +45,6 @@
       screen and (min-resolution: 2dppx) {
       background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../img/decor/header_desktop@2x.jpg");
-      max-width: 1600px;
     }
   }
 }
