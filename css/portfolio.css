@@ -255,8 +255,10 @@ img {
   letter-spacing: 0.06em;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .subscribe-button:hover, .subscribe-button:focus {
@@ -841,15 +843,16 @@ img {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 4px;
+  margin: 0px auto;
 }
 
 .category {
   font-size: 16px;
   font-weight: 1.87;
-  line-height: 0.03em;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
